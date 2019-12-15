@@ -16,28 +16,42 @@
 
 <body>
   <!-- Menu  -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Jeronimo Martins</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+
+    <a class="navbar-brand p-0" href="#"><img src="img/logo.jpg"> Jeronimo Martins</a>
 
   </nav>
   <!-- Sekcja logowania -->
-  <div class="container h-100">
+  <div class="container h-100" id="loginContainer">
     <div class="row align-items-center h-100">
       <div class="col-lg-4" id="login">
-        <h1>System do zarządzania dokumentami prawnymi</h1>
+        <h1 class="mt-4 ml-3 mb-4">System do zarządzania dokumentami prawnymi</h1>
         <hr>
         <h3>
           Logowanie
         </h3>
         <p>Zaloguj się do systemu przy pomocy swojego adresu e-mail i hasła</p>
         <form>
+          <div class="input-group mb-2">
 
+            <input type="email" class="form-control" id="email" aria-describedby="adres e-mail"
+              placeholder="Twój email">
+
+          </div>
+          <div class="input-group mb-2">
+            <input type="password" class="form-control" id="password" placeholder="Wpisz hasło">
+          </div>
+
+          <div class="imput-group mb-3">
+            <a href="#">Nie pamiętasz swojego hasła?</a>
+          </div>
+
+
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </div>
   </div>
-
-
   </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
