@@ -21,8 +21,10 @@
 
         <nav id="sidebar">
             <div class="sidebar-header">
+                <a href="/">
+                    <img src="img/fullLogo.png">
+                </a>
 
-                <img src="img/logo.svg">
             </div>
 
             <ul class="list-unstyled components">
@@ -35,21 +37,46 @@
                 <li><a href="#"><i class="fas fa-copy"></i>Archiwum</a></li>
                 <li><a href="#"><i class="fas fa-copy"></i>Pomoc</a></li>
             </ul>
+
+            <button type="button" id="sidebarCollapse" class="btn">
+                <img src="img/slide-right.svg">
+                Zwiń
+            </button>
         </nav>
 
         <!-- Page Content  -->
-        <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-light p-0" id="mainNav">
-
-                <!-- <a class="navbar-brand p-0" href="/">
-                    TEST
-                </a> -->
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
-                    <i class="fas fa-align-left"></i>
-                    <span>Zwiń manu</span>
-                </button>
+        <div class="d-flex flex-column" id="content">
+            <nav class="navbar navbar-expand-lg navbar-light p-0 justify-content-end" id="dashboardNav">
+                <div class="newProject"><button class="btn" id="newProjectButton">Rozpocznij nowy projekt</button></div>
+                <div class="profile">
+                    <img src="img/harvey.jpg" id="profilePic">
+                    Remigiusz Mrozewicz
+                    <img src="img/path-copy.svg">
+                </div>
+                <div class="lang">
+                    <img src="img/poland.svg">
+                    PL
+                    <img src="img/path-copy.svg">
+                </div>
             </nav>
+            <div>
+                <div>
+                    Tutaj będą tableki z dokumentami
+                </div>
+
+                <nav id="rightBar" class="">
+                    <div id="docTemplates">
+                        <h1>Popularne szablony dokumentów</h1>
+                    </div>
+                    <div id="news">
+                        <h1>Nowości w bazie wiedzy</h1>
+                    </div>
+                </nav>
+            </div>
+
         </div>
+
+        <!-- Right Sidebar  -->
 
 
     </div>
