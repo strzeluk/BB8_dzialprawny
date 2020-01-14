@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <!-- Custom CSSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=latin-ext" rel="stylesheet">
 
     <title>Dział Prawny - Dashboard</title>
@@ -19,35 +20,14 @@
 
     <div id="dashboardContainer">
 
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <a href="/">
-                    <img src="img/fullLogo.png">
-                </a>
+        <nav class="navbar navbar-expand-sm navbar-light justify-content-between" id="dashboardNav">
 
-            </div>
-
-            <ul class="list-unstyled components">
-                <li class="active"><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
-                <li><a href="#"><i class="fas fa-briefcase"></i>Projekty</a></li>
-                <li><a href="#"><i class="fas fa-copy"></i>Dokumenty</a></li>
-                <li><a href="#"><i class="fas fa-copy"></i>Szablony dokumentów</a></li>
-                <li><a href="#"><i class="fas fa-copy"></i>Ogranizacja</a></li>
-                <li><a href="#"><i class="fas fa-copy"></i>Baza wiedzy</a></li>
-                <li><a href="#"><i class="fas fa-copy"></i>Archiwum</a></li>
-                <li><a href="#"><i class="fas fa-copy"></i>Pomoc</a></li>
-            </ul>
-
-            <button type="button" id="sidebarCollapse" class="btn">
-                <img src="img/slide-right.svg">
-                Zwiń
-            </button>
-        </nav>
-
-
-        <div class="d-flex flex-column" id="content">
-            <nav class="navbar navbar-expand-lg navbar-light p-0 justify-content-end" id="dashboardNav">
-                <div class="newProject"><button class="btn" id="newProjectButton">Rozpocznij nowy projekt</button></div>
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="img/logo_full_white.svg">
+            </a>
+            <div class="d-flex float-right">
+                <button class="btn" id="newProjectButton"><img class="mr-2" src="img/folder-add.svg">Rozpocznij nowy
+                    projekt</button>
                 <div class="profile">
                     <img src="img/harvey.jpg" id="profilePic">
                     Remigiusz Mrozewicz
@@ -58,21 +38,118 @@
                     PL
                     <img src="img/path-copy.svg">
                 </div>
-            </nav>
-            <div class="dashboard">
-                <div class="body-content">
-                    <!-- Content  -->
-                    <h2>Body content</h2>
-                </div>
+            </div>
+        </nav>
 
-                <nav id="rightBar">
-                    <div id="docTemplates">
-                        <h1>Popularne szablony dokumentów</h1>
+        <nav class="navbar navbar-expand-sm" id="dashboardMenu">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="mr-2" src="img/dashboard.svg">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="mr-2" src="img/projects.svg">Projekty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="mr-2" src="img/documents.svg">Dokumenty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="mr-2" src="img/templates.svg">Szablony dokumentów</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="mr-2" src="img/organization.svg">Organizacja</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="mr-2" src="img/knowledge.svg">Baza wiedzy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="mr-2" src="img/archive.svg">Archiwum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="mr-2" src="img/help.svg">Pomoc</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-8">
+                    <div class="d-flex justify-content-between">
+                        <h1>Dokumenty</h1>
+                        <a class="show-more" href="#">Pokaż wszystkie</a>
                     </div>
-                    <div id="news">
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Osoba przypisana</th>
+                                <th scope="col">CRM</th>
+                                <th scope="col">Data zmiany</th>
+                                <th scope="col">Status</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Umowa barterowa Aurelis</td>
+                                <td>2345/1234</td>
+                                <td>30/11/2019 11:55</td>
+                                <td><img src="img/success.svg"></td>
+                                <td>Akcje</td>
+                            </tr>
+                            <tr>
+                                <td>Umowa barterowa Aurelis</td>
+                                <td>2345/1234</td>
+                                <td>30/11/2019 11:55</td>
+                                <td><img src="img/success.svg"></td>
+                                <td>Akcje</td>
+                            </tr>
+                            <tr>
+                                <td>Umowa barterowa Aurelis</td>
+                                <td>2345/1234</td>
+                                <td>30/11/2019 11:55</td>
+                                <td><img src="img/success.svg"></td>
+                                <td>Akcje</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="d-flex justify-content-between">
+                        <h1>Projekty z moim udziałem</h1>
+                        <a class="show-more" href="#">Pokaż wszystkie</a>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Właściciel projektu</th>
+                                <th scope="col">Tytuł dokumentu</th>
+                                <th scope="col">Termin</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Norbert Nowak - Poniatowski</td>
+                                <td>Umowa barterowa Aurelis</td>
+                                <td><span class="ontime">15/12/2019</span></td>
+                                <td><img src="img/success.svg"></td>
+                            </tr>
+                            <tr>
+                                <td>Norbert Nowak - Poniatowski</td>
+                                <td>Umowa barterowa Aurelis</td>
+                                <td><span class="outdated">15/12/2019</span></td>
+                                <td><img src="img/success.svg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-4">
+                    <div id="sidemenu">
+                        <h1>Popularne szablony dokumentów</h1>
                         <h1>Nowości w bazie wiedzy</h1>
                     </div>
-                </nav>
+
+                </div>
             </div>
         </div>
     </div>

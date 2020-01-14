@@ -10,6 +10,8 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <!-- Custom CSSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dashboard_sidebar.css" />
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=latin-ext" rel="stylesheet">
 
     <title>Dział Prawny - Dashboard</title>
@@ -44,7 +46,7 @@
             </button>
         </nav>
 
-        <!-- Page Content  -->
+
         <div class="d-flex flex-column" id="content">
             <nav class="navbar navbar-expand-lg navbar-light p-0 justify-content-end" id="dashboardNav">
                 <div class="newProject"><button class="btn" id="newProjectButton">Rozpocznij nowy projekt</button></div>
@@ -59,12 +61,13 @@
                     <img src="img/path-copy.svg">
                 </div>
             </nav>
-            <div id="dashboard-wrap-content">
-                <div id="dashboard-left">
-                    Tutaj będą tableki z dokumentami
+            <div class="dashboard">
+                <div class="body-content">
+                    <!-- Content  -->
+                    <h2>Body content</h2>
                 </div>
 
-                <nav id="rightBar" class="">
+                <nav id="rightBar">
                     <div id="docTemplates">
                         <h1>Popularne szablony dokumentów</h1>
                     </div>
@@ -73,12 +76,7 @@
                     </div>
                 </nav>
             </div>
-
         </div>
-
-        <!-- Right Sidebar  -->
-
-
     </div>
 
     <!-- Optional JavaScript -->
