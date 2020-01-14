@@ -10,6 +10,8 @@ body{
     height: 100%;
 }
 
+
+
 .navbar-light{
     background-color: #ffffff;
     box-shadow: inset 0 -1px 0 0 #e8e8e8;
@@ -149,9 +151,25 @@ body{
     font-weight: normal;
 }
 
+#rightBar {
+    padding: 30px 52px 30px 40px;
+}
+
+#dashboardContainer{
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+}
+
 /* ---------------------------------------------------
     dashboardNav
 ----------------------------------------------------- */
+
+#dashboardNav{
+    height: 84px;
+    width: 100%;
+    display: flex;
+}
 
 #newProjectButton{
     width: 205px;
@@ -192,45 +210,29 @@ body{
     rightBar
 ----------------------------------------------------- */
 
+#rightBar{
+    box-shadow: 0 2px 20px 0 #eaeced, inset 1px 0 0 0 #e8e8e8;
+    background-color: #ffffff;
+    width: 376px;
+    height: 100%;
+}
 
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
-#dashboardContainer {
+#dashboard-wrap-content{
     display: flex;
-    align-items: stretch;
-  }
-  
-  #dashboardNav {
-    height: 84px;
+    height: calc(100%-84px);
+}
+
+#dashboard-left{
     width: 100%;
-  }
-  
-  #rightBar {
-    width: 376px;
-  }
-  
-  #content {
+}
+
+#content {
     width: 100%;
-    min-height: 100vh;
     transition: all 0.3s;
-  }
-  
-  nav#rightBar {
-    max-width: 376px;
-    box-shadow: 0 2px 20px 0 #eaeced, inset 1px 0 0 0 #e8e8e8;
-    background-color: #ffffff;
-    padding: 30px 52px 30px 40px;
-  }
-  .body-content {
-      height: calc(100vh - 84px);
-      width: 100%;
-      flex-basis: 80%;
-  }
-  .dashboard {
-      display: flex;
-      justify-content: space-between;
-  }
+}
 
 /* ---------------------------------------------------
     SIDE BAR
@@ -312,10 +314,10 @@ a[aria-expanded="true"] {
 
 @media (max-width: 768px) {
     #sidebar {
-        min-width: 75px;
-        max-width: 75px;
+        min-width: 80px;
+        max-width: 80px;
         text-align: center;
-        /* margin-left: -80px !important; */
+        margin-left: -80px !important;
     }
     .dropdown-toggle::after {
         top: auto;
@@ -340,6 +342,9 @@ a[aria-expanded="true"] {
     }
     #sidebar ul li a i {
         font-size: 1.3em;
+    }
+    #sidebar {
+        margin-left: 0;
     }
 
 }
