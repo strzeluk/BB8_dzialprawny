@@ -125,7 +125,14 @@ body{
     vertical-align: middle;
     border-bottom: solid 7px #f6f6f6;
     border-top: none;
-    border-radius: 20px 20px 20px 20px;
+}
+
+.table td:first-child{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.table td:last-child{
+    border-radius: 0px 10px 10px 0px;
 }
 
 .ontime {
@@ -144,6 +151,10 @@ body{
     border-radius: .3rem;
 }
 
+td.center, th.center {
+    text-align: center;
+}
+
 #sidemenu{
     background-color: #ffffff;
     border-radius: 5px;
@@ -154,4 +165,33 @@ body{
 
 #sidemenu h1 {
     margin: 0 0 20px 0;
+}
+
+
+/* ---------------------------------------------------
+    Right sidebar menu
+----------------------------------------------------- */
+
+#sidemenu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidemenu ul a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.sidebarbtn {
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, rgba(230,235,237,1) 0%, rgba(255,255,255,1) 45%);
+    width: 100%;
+    text-align: left;
+    margin-bottom: 7px;
+    color: #14394f;
+    font-size: 14px;
+}
+
+.sidebarbtn span {
+    font-size: 20px;
 }

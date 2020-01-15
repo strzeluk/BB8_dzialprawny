@@ -3,3 +3,8 @@ $(document).ready(function () {
         $('#sidebar').toggleClass('active');
     });
 });
+
+$(function () {
+    // Enables popover
+    $("[data-toggle=popover]").popover();
+});
