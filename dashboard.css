@@ -1,3 +1,9 @@
+/* 
+***************************
+*      Style współna dla całego projektu
+***************************
+*/
+
 body{
     font-size: 11px;
     font-family: 'Roboto', sans-serif;
@@ -14,32 +20,11 @@ body{
     background-color: #f6f6f6;
 }
 
-.dashboardBody a{
-    color: #000000;
-    text-decoration: none;
-}
-
 .dashboardBody h1{
     font-size: 20px;
     font-weight: normal;
     margin: 35px 0px;
 }
-
-.popoverMenu {
-    display: none;
-}
-
-.popover-body{
-    list-style: none;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.popover-body li{
-    margin-bottom: 5px;
-
-}
-
 
 /* ---------------------------------------------------
     dashboardNav
@@ -54,7 +39,6 @@ body{
     height: 40px;
     border-radius: 20px;
     background-image: linear-gradient(92deg, #1a9277 0%, #aed3a0 131%);
-    background-clip: padding-box;
     color: #FFF;
     font-size: 12px;
     margin: 20px 5px;
@@ -80,7 +64,6 @@ body{
 #profilePic{
     height: 40px;
     width: 40px;
-    -webkit-clip-path: circle();
     clip-path: circle();
 }
 
@@ -105,7 +88,7 @@ body{
 }
 
 .show-more{
-    color: #1a9277 !important;
+    color: #1a9277;
     font-weight: 500;
     font-size: 12px;
     margin: 35px 0px;
@@ -172,10 +155,6 @@ td.center, th.center {
     text-align: center;
 }
 
-/* ---------------------------------------------------
-    Right sidebar menu
------------------------------------------------------ */
-
 #sidemenu{
     background-color: #ffffff;
     border-radius: 5px;
@@ -187,6 +166,11 @@ td.center, th.center {
 #sidemenu h1 {
     margin: 0 0 20px 0;
 }
+
+
+/* ---------------------------------------------------
+    Right sidebar menu
+----------------------------------------------------- */
 
 #sidemenu ul {
     list-style: none;
@@ -201,7 +185,6 @@ td.center, th.center {
 .sidebarbtn {
     border-radius: 5px;
     background-image: linear-gradient(90deg, rgba(230,235,237,1) 0%, rgba(255,255,255,1) 45%);
-    background-clip: padding-box;
     width: 100%;
     text-align: left;
     margin-bottom: 7px;
@@ -211,6 +194,4 @@ td.center, th.center {
 
 .sidebarbtn span {
     font-size: 20px;
-    font-weight: bold;
-    float: right;
 }
