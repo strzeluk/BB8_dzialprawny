@@ -123,6 +123,7 @@ body{
     height: 40px;
     border-radius: 20px;
     background-image: linear-gradient(92deg, #1a9277 0%, #aed3a0 131%);
+    background-clip: padding-box;
     color: #FFF;
     font-size: 12px;
 }
