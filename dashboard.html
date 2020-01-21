@@ -26,7 +26,7 @@
                 <img class="logo" src="img/logo_full_white.svg">
             </a>
             <div class="d-flex float-right">
-                <button class="btn" id="newProjectButton"><img class="mr-2" src="img/folder-add.svg">Rozpocznij nowy
+                <button class="btn" id="newProjectButton"><img class="mr-2" src="img/folder-add.svg">Nowy
                     projekt</button>
                 <div data-toggle="popover" data-placement="bottom" data-trigger="focus" class="profile">
                     <a href="#" id="profileMenu" data-toggle="popover" data-placement="bottom" data-trigger="focus">
@@ -80,14 +80,14 @@
 
         <div class="container">
             <div class="row ">
-                <div class="col-8">
+                <div class="col-sm-8">
                     <div class="d-flex justify-content-between">
                         <h1>Dokumenty</h1>
                         <a class="show-more" href="#">Pokaż wszystkie</a>
                     </div>
 
                     <table class="table">
-                        <thead>
+                        <thead class="desktop">
                             <tr>
                                 <th scope="col">Osoba przypisana</th>
                                 <th scope="col">CRM</th>
@@ -96,8 +96,15 @@
                                 <th scope="col"></th>
                             </tr>
                         </thead>
+                        <thead class="mobile">
+                            <tr>
+                                <th scope="col">Informacje</th>
+                                <th scope="col" class="center">Status</th>
+                                <th scope="col" class="center">Akcje</th>
+                            </tr>
+                        </thead>
                         <tbody>
-                            <tr>
+                            <tr class="desktop">
                                 <td>Umowa barterowa Aurelis</td>
                                 <td>2345/1234</td>
                                 <td>30/11/2019 11:55</td>
@@ -106,7 +113,7 @@
                                         data-placement="bottom" data-trigger="focus">Akcje
                                         <img class="ml-1" src="img/path-copy.svg"></a></td>
                             </tr>
-                            <tr>
+                            <tr class="desktop">
                                 <td>Umowa barterowa Aurelis</td>
                                 <td>2345/1234</td>
                                 <td>30/11/2019 11:55</td>
@@ -115,16 +122,47 @@
                                         data-placement="bottom" data-trigger="focus">Akcje
                                         <img class="ml-1" src="img/path-copy.svg"></a></td>
                             </tr>
-                            <tr>
+                            <tr class="desktop">
                                 <td>Umowa barterowa Aurelis</td>
                                 <td>2345/1234</td>
                                 <td>30/11/2019 11:55</td>
                                 <td class="center"><img src="img/success.svg"></td>
-                                <td class="center">
-                                    <a href="#" id="tableAction" data-toggle="popover" data-placement="bottom"
-                                        data-trigger="focus">Akcje
-                                        <img class="ml-1" src="img/path-copy.svg"></a>
+                                <td class="center"><a href="#" id="tableAction" data-toggle="popover"
+                                        data-placement="bottom" data-trigger="focus">Akcje
+                                        <img class="ml-1" src="img/path-copy.svg"></a></td>
+                            </tr>
+                            <tr class="mobile">
+                                <td class="d-flex flex-column">
+                                    <span class="tableH1">Umowa barterowa Aurelis</span>
+                                    <span class="tablePerson">2345/1234</span>
+                                    <span class="tableSmall">Data zmiany: 30/11/2019 11:55</span>
                                 </td>
+                                <td class="center"><img src="img/success.svg"></td>
+                                <td class="center"><a href="#" id="tableAction" data-toggle="popover"
+                                        data-placement="bottom" data-trigger="focus">
+                                        <img class="ml-1" src="img/dots-to-close.svg"></a></td>
+                            </tr>
+                            <tr class="mobile">
+                                <td class="d-flex flex-column">
+                                    <span class="tableH1">Umowa barterowa Aurelis</span>
+                                    <span class="tablePerson">2345/1234</span>
+                                    <span class="tableSmall">Data zmiany: 30/11/2019 11:55</span>
+                                </td>
+                                <td class="center"><img src="img/success.svg"></td>
+                                <td class="center"><a href="#" id="tableAction" data-toggle="popover"
+                                        data-placement="bottom" data-trigger="focus">
+                                        <img class="ml-1" src="img/dots-to-close.svg"></a></td>
+                            </tr>
+                            <tr class="mobile">
+                                <td class="d-flex flex-column">
+                                    <span class="tableH1">Umowa barterowa Aurelis</span>
+                                    <span class="tablePerson">2345/1234</span>
+                                    <span class="tableSmall">Data zmiany: 30/11/2019 11:55</span>
+                                </td>
+                                <td class="center"><img src="img/success.svg"></td>
+                                <td class="center"><a href="#" id="tableAction" data-toggle="popover"
+                                        data-placement="bottom" data-trigger="focus">
+                                        <img class="ml-1" src="img/dots-to-close.svg"></a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -185,7 +223,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4">
                     <div id="sidemenu">
                         <h1>Popularne szablony dokumentów</h1>
                         <ul>
