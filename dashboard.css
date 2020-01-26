@@ -89,15 +89,15 @@ body{
 }
 
 /* ---------------------------------------------------
-    dashboardMenu
+    dashboardMenuDesktop
 ----------------------------------------------------- */
 
-#dashboardMenu{
+#dashboardMenuDesktop{
     height: 55px;
     background-image: linear-gradient(to right, #1a9277, #aed3a0);
 }
 
-#dashboardMenu .nav-link{
+#dashboardMenuDesktop .nav-link{
     font-size: 12px;
     font-weight: 500;
     color: #ffffff;
@@ -110,6 +110,75 @@ body{
     font-size: 12px;
     margin: 35px 0px;
 }
+
+/* ---------------------------------------------------
+    dashboardMenuMobile
+----------------------------------------------------- */
+
+#dashboardMenuMobile{
+    height: 50px;
+    background-image: linear-gradient(to right, #1a9277, #aed3a0);
+}
+
+#dashboardMenuMobile .navbar-nav {
+    flex-direction: row;
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+#dashboardMenuMobile .btn{
+    font-size: 7px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 2px 10px;
+}
+
+#dashboardMenuMobile .btn img {
+    margin-bottom: 5px;
+}
+
+
+#slideMobileMenu{
+    font-size: 14px;
+    font-weight: 500;
+    display: none;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 50px;
+    z-index: 1020;
+    border-radius: 10px 10px 0 0;
+}
+
+#langMobile, #profileMobile{
+    padding: 10px;
+    margin: 10px;
+}
+
+#profileMobile {
+    padding: 15px;
+    margin: 5px;
+    box-shadow: 0 1px 0 0 #e8e8e8;
+}
+
+#langMobile img.flag{
+    margin-right: 20px;
+}
+
+#profileMobile #profilePic{
+    margin-right: 15px;
+}
+
+#slideMobileMenuList {
+    padding: 5px 20px;
+    box-shadow: 0 1px 0 0 #e8e8e8;
+}
+
+#slideMobileMenuList li {
+    margin-bottom: 10px;
+}
+
 
 /* ---------------------------------------------------
     Tabels
@@ -174,11 +243,13 @@ td.center, th.center {
 
 .tableH1 {
     font-size: 14px;
+    margin-bottom: 4px;
 }
 
 .tablePerson {
     font-size: 10px;
     color: #858585;
+    margin-bottom: 5px;
 }
 
 .tableSmall{
@@ -230,9 +301,6 @@ td.center, th.center {
 }
 
 @media screen and (max-width: 576px){
-    #dashboardMenu{
-        display: none;
-    }
 
     .profile, .lang{
         margin: 0;
@@ -243,6 +311,10 @@ td.center, th.center {
         display: none;
     }
 
+    #sidemenu {
+        margin-bottom: 30px;
+    }
+
 } 
 
 @media screen and (min-width: 576px){
@@ -251,4 +323,5 @@ td.center, th.center {
         display: none;
     }
 
+    
 } 

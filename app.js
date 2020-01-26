@@ -5,4 +5,8 @@ $(function () {
             return $('#' + this.id + 'Popover').html();
         }
     });
+
+    $('#openMenu').click(function () {
+        $('#slideMobileMenu').slideToggle();
+    });
 })
